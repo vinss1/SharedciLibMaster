@@ -1,5 +1,6 @@
 #!/usr/bin/env groovy
 
+@Library('/breuer-jenkins-lib/src/breuer/jenkins/utils/DotNetJob.groovy')
 import javaposse.jobdsl.dsl.Job
 import breuer.jenkins.utils.JobUtils
 import jenkins.model.Jenkins
