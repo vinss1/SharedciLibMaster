@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-@Library('/breuer-jenkins-lib/src/breuer/jenkins/utils/DotNetJob.groovy')
+
 import javaposse.jobdsl.dsl.Job
 import breuer.jenkins.utils.JobUtils
 import jenkins.model.Jenkins
@@ -18,7 +18,7 @@ def call(body) {
     pipeline {
 		agent any
 		stages {
-			/*stage('Testing') {
+			stage('Testing') {
 				steps {
 					script {
 						EnvVars envVars = build.getEnvironment(listener);
@@ -33,14 +33,14 @@ def call(body) {
 					echo 'Scanning...'
 					echo "${pwd()}"
 					echo "${WORKSPACE}"
-					/*script {
+					script {
 						bat 'set > env.txt'
 						String[] envs = readFile('env.txt').split("\r?\n")
 
 						for(String vars: envs){
 							println(vars)
 						}
-					}*/
+					}
 					script {
 						def baseDir = "${WORKSPACE}".split("\\")[ -1 ]
 						echo "BaseDir: ${baseDir}"
