@@ -18,7 +18,7 @@ def call(body) {
     pipeline {
 		agent any
 		stages {
-			stage('Testing') {
+			/*stage('Testing') {
 				steps {
 					script {
 						EnvVars envVars = build.getEnvironment(listener);
@@ -28,7 +28,7 @@ def call(body) {
 					}
 				}
 			}*/
-			stage('Scan for new jobs') {
+			/*stage('Scan for new jobs') {
 				steps {
 					echo 'Scanning...'
 					echo "${pwd()}"
@@ -40,7 +40,7 @@ def call(body) {
 						for(String vars: envs){
 							println(vars)
 						}
-					}
+					}*/
 					script {
 						def baseDir = "${WORKSPACE}".split("\\")[ -1 ]
 						echo "BaseDir: ${baseDir}"
