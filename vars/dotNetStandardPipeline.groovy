@@ -1,5 +1,6 @@
 #!/usr/bin/env groovy
 
+import javaposse.jobdsl.dsl.Job
 import breuer.jenkins.utils.JobUtils
 import jenkins.model.Jenkins
 import hudson.model.User
