@@ -47,7 +47,7 @@ def call(body) {
 						echo "RelDir: ../${baseDir}@libs/breuer-jenkins-lib/src/breuer/jenkins/utils/DotNetJob.groovy"
 						jobDsl(removedJobAction: 'DELETE', removedViewAction: 'DELETE',
 							targets: "../${baseDir}@libs/breuer-jenkins-lib/src/breuer/jenkins/utils/DotNetJob.groovy", unstableOnDeprecation: true)
-						obDsl(scriptText: libraryResource('resources/breuer/jenkins/utils/DotNetJob.groovy'))
+						jobDsl(scriptText: libraryResource('resources/breuer/jenkins/utils/DotNetJob.groovy'))
 					}
 					
 				}
