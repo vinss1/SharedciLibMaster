@@ -18,7 +18,7 @@ def call(body) {
     pipeline {
 		agent any
 		stages {
-			/*stage('Testing') {
+			stage('Testing') {
 				steps {
 					script {
 						EnvVars envVars = build.getEnvironment(listener);
@@ -27,7 +27,7 @@ def call(body) {
 						echo "Workspace: ${filename}"
 					}
 				}
-			}*/
+			}
 			/*stage('Scan for new jobs') {
 				steps {
 					echo 'Scanning...'
