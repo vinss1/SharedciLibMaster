@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 package breuer.jenkins.utils
 
-import javaposse.jobdsl.dsl.Job
+import javaposse.jobdsl.dsl.Job;
 
 class JobUtils {
 
