@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 package breuer.jenkins.utils
 
-import javaposse.jobdsl.dsl.Job
+import javaposse.jobdsl.dsl.Job;
 
 def solutions = findFiles glob: '**/*.sln'
 echo "Solution count: ${solutions.size()}"
