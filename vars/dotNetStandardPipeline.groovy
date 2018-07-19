@@ -1,3 +1,4 @@
+
 #!/usr/bin/env groovy
 
 
@@ -22,8 +23,8 @@ def call(body) {
 				steps {
 					script {
 						EnvVars envVars = build.getEnvironment(listener);
-
-						def filename = envVars.get('WORKSPACE')
+					}
+					def filename = envVars.get('WORKSPACE') {
 						echo "Workspace: ${filename}"
 					}
 				}
