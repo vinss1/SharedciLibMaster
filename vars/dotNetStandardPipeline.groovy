@@ -22,9 +22,10 @@ def call(body) {
 			stage('Testing') {
 				steps {
 					script {
-						EnvVars envVars = build.getEnvironment(listener);
-					
-				}
+						EnvVars envVars = build.getEnvironment(listener);					
+						def filename = envVars.get('WORKSPACE') 
+						echo "Workspace: ${filename}"
+					}
 			}
 			/*stage('Scan for new jobs') {
 				steps {
@@ -60,7 +61,4 @@ def call(body) {
 		}
 	}
 }
-					def filename = envVars.get('WORKSPACE') {
-						echo "Workspace: ${filename}"
-					}
 }
