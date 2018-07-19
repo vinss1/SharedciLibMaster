@@ -1,6 +1,4 @@
-=
 #!/usr/bin/env groovy
-
 
 import javaposse.jobdsl.dsl.Job
 import breuer.jenkins.utils.JobUtils
